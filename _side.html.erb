@@ -1,0 +1,27 @@
+<div class="span3">
+    <% if content_for?(:special_block) %>
+      <%= yield :special_block %>
+    <% else %>
+      <div class="promote">
+        <a href="/products/index.html" class="btn btn-info btn-large" id="special_discount">Special Discount! Only Today!</a>
+      </div>
+    <% end %>
+    <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+            <li class="nav-header">Search Engines</li>
+            <li class="active"><a href="https://www.google.com/">Google</a></li>
+            <li><a href="https://www.yahoo.com/">Yahoo!</a></li>
+            <li><a href="http://www.bing.com/">Bing</a></li>
+            <li><a href="http://www.ask.com/">Ask.com</a></li>
+            <li class="nav-header">social networking websites</li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://twitter.com/">Twitter</a></li>
+            <li><a href="https://plus.google.com/">Google+</a></li>
+            <li><a href="http://www.linkedin.com/">LinkedIn</a></li>
+            <li><a href="http://www.flickr.com/">Flickr</a></li>
+            <li><a href="https://foursquare.com/">Foursquare</a></li>
+            <li><a href="http://delicious.com/">delicious</a></li>
+            <li><a href="http://www.anobii.com/">aNobii</a></li>
+        </ul>
+    </div><!--/.well -->
+</div><!--/span-->

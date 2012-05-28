@@ -1,0 +1,37 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.sidebar-nav {
+    padding: 9px 0;
+}
+
+.promote {
+  padding-bottom: 1em;
+}
+
+.product_row {
+  min-height: 190px;
+  padding-top: 1em;
+}
+
+.product {
+  img {
+    float: left;
+  }
+  dl {
+    margin-left: 160px;
+    dt {
+      font-size: 1.4em;
+      padding-bottom: 0.5em;
+    }
+    dd.buynow {
+      padding-top: 1em;
+    }
+  }
+}
+
+.main-product-img {
+  margin-right: 2em;
+}

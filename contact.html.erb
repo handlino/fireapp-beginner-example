@@ -1,0 +1,46 @@
+<% @title = capture do %>
+  Contact
+<% end %>
+
+<h1>Contact</h1>
+<p class="alert alert-info">This page uses layout _layout.html.erb.</p>
+<p><%= lorem_paragraphs 2 %></p>
+
+<form class="form-horizontal">
+  <fieldset>
+    <div class="control-group">
+      <label class="control-label" for="input01">Name</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="input01">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="input02">Company</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="input02">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="input03">email</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="input03">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="input04">Subject</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="input04">
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="input05">Description</label>
+      <div class="controls">
+        <textarea id="textarea" class="input-xlarge" rows="3"></textarea>
+      </div>
+    </div>
+    <div class="form-actions">
+      <button class="btn btn-primary" type="submit">Submit!</button>
+      <button class="btn">Clear</button>
+    </div>
+  </fieldset>
+</form>

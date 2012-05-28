@@ -1,0 +1,44 @@
+/* line 1, ../sass/default.scss */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+/* line 6, ../sass/default.scss */
+.sidebar-nav {
+  padding: 9px 0;
+}
+
+/* line 10, ../sass/default.scss */
+.promote {
+  padding-bottom: 1em;
+}
+
+/* line 14, ../sass/default.scss */
+.product_row {
+  min-height: 190px;
+  padding-top: 1em;
+}
+
+/* line 20, ../sass/default.scss */
+.product img {
+  float: left;
+}
+/* line 23, ../sass/default.scss */
+.product dl {
+  margin-left: 160px;
+}
+/* line 25, ../sass/default.scss */
+.product dl dt {
+  font-size: 1.4em;
+  padding-bottom: 0.5em;
+}
+/* line 29, ../sass/default.scss */
+.product dl dd.buynow {
+  padding-top: 1em;
+}
+
+/* line 35, ../sass/default.scss */
+.main-product-img {
+  margin-right: 2em;
+}

@@ -1,0 +1,24 @@
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand" href="/">Project name</a>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <!---easy ver start-->
+                    <li <%= request.path == '/' ? 'class="active"' : '' %>><a href="/">Home</a></li>
+                    <li <%= request.path == '/about.html' ? 'class="active"' : '' %>><a href="/about.html">About</a></li>
+                    <li <%= request.path =~ /^\/products\// ? 'class="active"' : '' %>><a href="/products/index.html">Products</a></li>
+                    <li <%= request.path == '/contact.html' ? 'class="active"' : '' %>><a href="/contact.html">Contact</a></li>
+                    <!---easy ver end-->
+                    <!---RUBY ver start-->
+                    <%#= content_tag(:li, link_to('Home', '/'), :class => ("active" if request.path == '/' )) %>
+                    <%#= content_tag(:li, link_to('About', '/about.html'), :class => ("active" if request.path == '/about.html' )) %>
+                    <%#= content_tag(:li, link_to('Products', '/products/index.html'), :class => ("active" if request.path =~ /^\/products\// )) %>
+                    <%#= content_tag(:li, link_to('Contact', '/contact.html'), :class => ("active" if request.path == '/contact.html' )) %>
+                    <!---RUBY ver end-->
+                </ul>
+                <p class="navbar-text pull-right">Request path is <span class="label label-info"><%= request.path %></span></p>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
+</div>

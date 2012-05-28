@@ -1,0 +1,42 @@
+<% @title = capture do %>
+  About
+<% end %>
+
+<% content_for :special_block do %>
+  <div class="well">
+    <h2>Our boss says</h2>
+    <p><%= meow 4 %></p>
+  </div>
+<% end %>
+
+<h1>About</h1>
+<p class="alert alert-info">This page uses layout _layout.html.erb. Demo the usage of Lorem Ipsum helpers.</p>
+
+<div class="well">
+  <img src="<%= lorem_image('300x250', :background_color => '0088cc', :color => 'fff', :text => lorem_word) %>" class="pull-right" />
+  <dl>
+    <dt>CEO: </dt>
+    <dd><%= lorem_name %></dd>
+    <dt>CEO email: </dt>
+    <dd><%= lorem_email %></dd>
+    <dt>Founded: </dt>
+    <dd><%= lorem_date %></dd>
+    <dt>Headquarters: </dt>
+    <dd><%= lorem_word %>, <%= lorem_words 2 %>, U.S.</dd>
+    <dt>Philosophy: </dt>
+    <dd><%= lorem_sentence %></dd>
+    <dd><%= lorem_paragraph %></dd>
+  </dl>
+</div>
+
+<div>
+  <p>
+    <%= lorem_paragraphs 2 %>
+  <p>
+  <p>
+    <%= lorem_paragraphs 5 %>
+  <p>
+  <p>
+    <%= lorem_paragraphs 3 %>
+  <p>
+</div>

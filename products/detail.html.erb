@@ -1,0 +1,18 @@
+<% @title = capture do %>
+  Products - detail
+<% end %>
+
+<img src="<%= lorem_image('450x600', :random_color => true, :text => lorem_word) %>" class="pull-left main-product-img" />
+
+<h1><%= lorem_words 4 %></h1>
+
+<h2><%= lorem_sentence %></h2>
+
+<p>
+  <%= lorem_paragraphs 2 %>
+<p>
+<p>
+  <%= lorem_paragraphs 5 %>
+<p>
+
+<a href="/products/index.html" class="btn btn-primary">Back to list</a>
