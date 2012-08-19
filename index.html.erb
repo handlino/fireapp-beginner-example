@@ -7,10 +7,10 @@
 
 <div class="well">
     <h2>You can use cookie to emulate state</h2>
-    <% if request.cookies['logged_in'] %>
-    <p>logged in. <a href="/logout.html">logout</a>.</p>
+    <% if is_user %>
+    <p>logged in. <a href="/action/logout.html">logout</a>.</p>
     <% else %>
-    <p>not logged in. <a href="/login.html">login</a>.</p>
+    <p>not logged in. <a href="/action/login.html">login</a>.</p>
     <% end %>
 </div>
 <div class="row-fluid">
