@@ -57,6 +57,6 @@
         <script src="/javascripts/bootstrap-collapse.js"></script>
         <script src="/javascripts/bootstrap-carousel.js"></script>
         <script src="/javascripts/bootstrap-typeahead.js"></script>
-        <%= livereload_js %>
+        <%= livereload_js unless ENV["RACK_ENV"] == "production" %>
     </body>
 </html>
